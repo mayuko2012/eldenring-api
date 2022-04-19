@@ -107,3 +107,11 @@ dist
 .env
 
 .vercel
+
+
+# Build
+build/
+
+
+# IDE
+.idea/

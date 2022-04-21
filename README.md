@@ -10,7 +10,6 @@ Get started at: https://eldenring.fanapis.com
 ## Tech Stack
 
 Deployment: Vercel
-
 Engine: NextJS
 Docs: Docusaurus v2
 Media Hosting: GitHub

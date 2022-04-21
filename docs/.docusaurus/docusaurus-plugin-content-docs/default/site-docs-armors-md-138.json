@@ -2,8 +2,8 @@
   "unversionedId": "armors",
   "id": "armors",
   "isDocsHomePage": false,
-  "title": "Armors Route",
-  "description": "Introduction",
+  "title": "Armors 请求路由",
+  "description": "简介",
   "source": "@site/docs/armors.md",
   "slug": "/armors",
   "permalink": "/docs/armors",
@@ -11,11 +11,11 @@
   "sidebar_label": "Armors",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Ammos Route",
+    "title": "箭类",
     "permalink": "/docs/ammos"
   },
   "next": {
-    "title": "Ashes of War Route",
+    "title": "Ashes of War 请求路由",
     "permalink": "/docs/ashes"
   }
 }

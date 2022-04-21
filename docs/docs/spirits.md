@@ -1,17 +1,17 @@
 ---
 id: spirits
-title: Spirits Route
+title: Spirits 请求路由
 sidebar_label: Spirits
 slug: /spirits
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of all spirits that can be obtained and summoned in Elden Ring, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output.
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the spirit |
 | name         | `string` | Name of the spirit |
@@ -21,7 +21,7 @@ This route fetches a list of all spirits that can be obtained and summoned in El
 | hpCost         | `number` | Cost in HP to summon this spirit once |
 | effects        | `string` | What happens when we summon this spirit |
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -30,7 +30,7 @@ This route fetches a list of all spirits that can be obtained and summoned in El
   data: [{
       id: "17f69ac4bd0l0i2rc618tsrggfp3kh",
       name: "Banished Knight Oleg",
-      image: "https://eldenring.fanapis.com/images/spirits/17f69ac4bd0l0i2rc618tsrggfp3kh.png",
+      image: "https://eldenring-api.vercel.app/images/spirits/17f69ac4bd0l0i2rc618tsrggfp3kh.png",
       description: "Ashen remains in which spirits yet dwell. Use to summon the spirit of Oleg, the Banished Knight.",
       fpCost: "100",
       hpCost: "0",
@@ -39,7 +39,7 @@ This route fetches a list of all spirits that can be obtained and summoned in El
     {
       id: "17f69beb243l0i2rcptdnjy0wl2nxj",
       name: "Demi-human Ashes",
-      image: "https://eldenring.fanapis.com/images/spirits/17f69beb243l0i2rcptdnjy0wl2nxj.png",
+      image: "https://eldenring-api.vercel.app/images/spirits/17f69beb243l0i2rcptdnjy0wl2nxj.png",
       description: "Ashen remains in which spirits yet dwell. Use to summon the spirits of five demi-humans.",
       fpCost: "69",
       hpCost: "0",
@@ -50,19 +50,19 @@ This route fetches a list of all spirits that can be obtained and summoned in El
 ```
 
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | https://eldenring.fanapis.com/api/spirits | This route retrieves a list of all the spirits of **Elden Ring**. |
-| `GET`         | https://eldenring.fanapis.com/api/spirits/:spirit_id | This route retrieves one **Elden Ring** spirit using its ID. |
+| `GET`         | https://eldenring-api.vercel.app/api/spirits | This route retrieves a list of all the spirits of **Elden Ring**. |
+| `GET`         | https://eldenring-api.vercel.app/api/spirits/:spirit_id | This route retrieves one **Elden Ring** spirit using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | https://eldenring.fanapis.com/api/spirits?limit=100 | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | https://eldenring.fanapis.com/api/spirits?limit=20&page=3 | This parameter is used no navigate between pages of results |
-| `name`         | none | https://eldenring.fanapis.com/api/spirits?name=Demi-human%20Ashes  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | https://eldenring-api.vercel.app/api/spirits?limit=100 | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | https://eldenring-api.vercel.app/api/spirits?limit=20&page=3 | This parameter is used no navigate between pages of results |
+| `name`         | none | https://eldenring-api.vercel.app/api/spirits?name=Demi-human%20Ashes  | This parameter is used to search for fields by their names |

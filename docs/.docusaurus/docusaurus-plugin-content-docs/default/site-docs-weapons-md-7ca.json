@@ -2,8 +2,8 @@
   "unversionedId": "weapons",
   "id": "weapons",
   "isDocsHomePage": false,
-  "title": "Weapons Route",
-  "description": "Introduction",
+  "title": "Weapons 请求路由",
+  "description": "简介",
   "source": "@site/docs/weapons.md",
   "slug": "/weapons",
   "permalink": "/docs/weapons",
@@ -11,7 +11,7 @@
   "sidebar_label": "Weapons",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Talismans Route",
+    "title": "Talismans 请求路由",
     "permalink": "/docs/talismans"
   },
   "next": {

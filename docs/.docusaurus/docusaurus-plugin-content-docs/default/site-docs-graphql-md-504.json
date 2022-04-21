@@ -3,7 +3,7 @@
   "id": "graphql",
   "isDocsHomePage": false,
   "title": "GraphQL Endpoint",
-  "description": "That's it, we support GraphQL out of the box. Just go to https://eldenring.fanapis.com/api/graphql and use the Apollo GraphQL sandbox. By using GraphQL you have access to all of its schema and resolvers, so it should be easy to explore on your own. Below, we'll see a few examples using the new GraphQL endpoint.",
+  "description": "That's it, we support GraphQL out of the box. Just go to https://eldenring-api.vercel.app/api/graphql and use the Apollo GraphQL sandbox. By using GraphQL you have access to all of its 响应 and resolvers, so it should be easy to explore on your own. Below, we'll see a few examples using the new GraphQL endpoint.",
   "source": "@site/docs/graphql.md",
   "slug": "/graphql",
   "permalink": "/docs/graphql",
@@ -11,7 +11,7 @@
   "sidebar_label": "Usage",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Weapons Route",
+    "title": "Weapons 请求路由",
     "permalink": "/docs/weapons"
   }
 }

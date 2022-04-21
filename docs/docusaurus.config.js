@@ -21,9 +21,8 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/deliton/eldenring-api',
+          href: 'https://github.com/mayuko2012/eldenring-api',
           label: 'GitHub',
           position: 'right',
         },

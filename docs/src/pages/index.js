@@ -23,7 +23,7 @@ function Home() {
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              快速开始
             </Link>
           </div>
         </div>

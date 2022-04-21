@@ -2,8 +2,8 @@
   "unversionedId": "npcs",
   "id": "npcs",
   "isDocsHomePage": false,
-  "title": "Npcs Route",
-  "description": "Introduction",
+  "title": "Npcs 请求路由",
+  "description": "简介",
   "source": "@site/docs/npcs.md",
   "slug": "/npcs",
   "permalink": "/docs/npcs",
@@ -11,11 +11,11 @@
   "sidebar_label": "NPCs",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Locations Route",
+    "title": "Locations 请求路由",
     "permalink": "/docs/locations"
   },
   "next": {
-    "title": "Shields Route",
+    "title": "Shields 请求路由",
     "permalink": "/docs/shields"
   }
 }

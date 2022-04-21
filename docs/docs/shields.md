@@ -1,17 +1,17 @@
 ---
 id: shields
-title: Shields Route
+title: Shields 请求路由
 sidebar_label: Shields
 slug: /shields
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of all Shields that can be obtained in Elden Ring, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output.
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the Shield |
 | name         | `string` | Name of the Shield |
@@ -24,7 +24,7 @@ This route fetches a list of all Shields that can be obtained in Elden Ring, and
 | requiredAttributes         | `{ name: string, amount: number }` | What are the required attribute amount in order to properly use this shield. Example: `{ name: "Str", amount: 20 }`  |
 | scalesWith         | `{ name: string, scaling: string }` | How much the shield scales and with what attributes. Example: `{ name: "Str", scaling: "B" }`  |
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -33,7 +33,7 @@ This route fetches a list of all Shields that can be obtained in Elden Ring, and
   data: [{
       id: "17f693d58ael0i125pgfsn2zo4078i",
       name: "Beastman's Jar-shield",
-      image: "https://eldenring.fanapis.com/images/shields/17f693d58ael0i125pgfsn2zo4078i.png",
+      image: "https://eldenring-api.vercel.app/images/shields/17f693d58ael0i125pgfsn2zo4078i.png",
       description: "Shield fashioned from a tall broken jar carried by the beastmen of Farum Azula. There is a particular knack to wielding it. The beastmen have always fired earthenware jars for the express purpose of making shields. Such are their ways, strange though they are.",
       attack: [{
           name: "Phy",
@@ -100,19 +100,19 @@ This route fetches a list of all Shields that can be obtained in Elden Ring, and
 }
 ```
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | <https://eldenring.fanapis.com/api/shields> | This route retrieves a list of all the Shields of **Elden Ring**. |
-| `GET`         | <https://eldenring.fanapis.com/api/shields/:shield_id> | This route retrieves one **Elden Ring** Shield using its ID. |
+| `GET`         | <https://eldenring-api.vercel.app/api/shields> | This route retrieves a list of all the Shields of **Elden Ring**. |
+| `GET`         | <https://eldenring-api.vercel.app/api/shields/:shield_id> | This route retrieves one **Elden Ring** Shield using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | <https://eldenring.fanapis.com/api/shields?limit=100> | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | <https://eldenring.fanapis.com/api/shields?limit=20&page=3> | This parameter is used no navigate between pages of results |
-| `name`         | none | <https://eldenring.fanapis.com/api/shields?name=Beastman's%20Jar-shield>  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | <https://eldenring-api.vercel.app/api/shields?limit=100> | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | <https://eldenring-api.vercel.app/api/shields?limit=20&page=3> | This parameter is used no navigate between pages of results |
+| `name`         | none | <https://eldenring-api.vercel.app/api/shields?name=Beastman's%20Jar-shield>  | This parameter is used to search for fields by their names |

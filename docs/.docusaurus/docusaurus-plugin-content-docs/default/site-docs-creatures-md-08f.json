@@ -2,8 +2,8 @@
   "unversionedId": "creatures",
   "id": "creatures",
   "isDocsHomePage": false,
-  "title": "Creatures Route",
-  "description": "Introduction",
+  "title": "Creatures 请求路由",
+  "description": "简介",
   "source": "@site/docs/creatures.md",
   "slug": "/creatures",
   "permalink": "/docs/creatures",
@@ -11,11 +11,11 @@
   "sidebar_label": "Creatures",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Classes Route",
+    "title": "Classes 请求路由",
     "permalink": "/docs/classes"
   },
   "next": {
-    "title": "Incantations Route",
+    "title": "Incantations 请求路由",
     "permalink": "/docs/incantations"
   }
 }

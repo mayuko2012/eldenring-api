@@ -1,17 +1,17 @@
 ---
 id: ashes
-title: Ashes of War Route
+title: Ashes of War 请求路由
 sidebar_label: Ashes of War
 slug: /ashes
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of all ashes of war that can be encountered in Elden Ring, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output.
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the ash of war item |
 | name         | `string` | Name of the ash of war item |
@@ -20,7 +20,7 @@ This route fetches a list of all ashes of war that can be encountered in Elden R
 | affinity         | `string` | Affinity of an Ash of War. |
 | skill         | `string` | Skill activated when this Ash of War is equipped in a weapon |
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -29,7 +29,7 @@ This route fetches a list of all ashes of war that can be encountered in Elden R
   data: [{
       id: "17f699db6b0l0hzn9xsxxwtgyfky3",
       name: "Ash Of War: Prelate's Charge",
-      image: "https://eldenring.fanapis.com/images/ashes/17f699db6b0l0hzn9xsxxwtgyfky3.png",
+      image: "https://eldenring-api.vercel.app/images/ashes/17f699db6b0l0hzn9xsxxwtgyfky3.png",
       description: "This Ash of War grants an armament the Flame affinity and the following skill:"
       Prelate 's Charge: Slam armament into the ground to create a surge of flames, then charge in. Hold to continue the charge."Usable on large and colossal axes and hammers.",
       affinity: "Flame",
@@ -38,7 +38,7 @@ This route fetches a list of all ashes of war that can be encountered in Elden R
     {
       id: "17f69632311l0hzna19sl4rzmmvk4",
       name: "Ash Of War: Barrage",
-      image: "https://eldenring.fanapis.com/images/ashes/17f69632311l0hzna19sl4rzmmvk4.png",
+      image: "https://eldenring-api.vercel.app/images/ashes/17f69632311l0hzna19sl4rzmmvk4.png",
       description: "This Ash of War grants no affinity to an armament, but imparts the following skill:"
       Barrage: Archery skill using a bow held horizontally
         .Ready the bow,
@@ -53,19 +53,19 @@ This route fetches a list of all ashes of war that can be encountered in Elden R
 }
 ```
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | <https://eldenring.fanapis.com/api/ashes> | This route retrieves a list of all the ashes of war present in **Elden Ring**. |
-| `GET`         | <https://eldenring.fanapis.com/api/ashes/:ash_of_war_id> | This route retrieves one **Elden Ring** Ash of War using its ID. |
+| `GET`         | <https://eldenring-api.vercel.app/api/ashes> | This route retrieves a list of all the ashes of war present in **Elden Ring**. |
+| `GET`         | <https://eldenring-api.vercel.app/api/ashes/:ash_of_war_id> | This route retrieves one **Elden Ring** Ash of War using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | <https://eldenring.fanapis.com/api/ashes?limit=100> | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | <https://eldenring.fanapis.com/api/ashes?limit=20&page=3> | This parameter is used no navigate between pages of results |
-| `name`         | none | <https://eldenring.fanapis.com/api/ashes?name=Ash%20Of%20War:%20Prelate's%20Charge>  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | <https://eldenring-api.vercel.app/api/ashes?limit=100> | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | <https://eldenring-api.vercel.app/api/ashes?limit=20&page=3> | This parameter is used no navigate between pages of results |
+| `name`         | none | <https://eldenring-api.vercel.app/api/ashes?name=Ash%20Of%20War:%20Prelate's%20Charge>  | This parameter is used to search for fields by their names |

@@ -2,8 +2,8 @@
   "unversionedId": "shields",
   "id": "shields",
   "isDocsHomePage": false,
-  "title": "Shields Route",
-  "description": "Introduction",
+  "title": "Shields 请求路由",
+  "description": "简介",
   "source": "@site/docs/shields.md",
   "slug": "/shields",
   "permalink": "/docs/shields",
@@ -11,11 +11,11 @@
   "sidebar_label": "Shields",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Npcs Route",
+    "title": "Npcs 请求路由",
     "permalink": "/docs/npcs"
   },
   "next": {
-    "title": "Sorceries Route",
+    "title": "Sorceries 请求路由",
     "permalink": "/docs/sorceries"
   }
 }

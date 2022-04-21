@@ -1,17 +1,17 @@
 ---
 id: bosses
-title: Bosses Route
+title: Bosses 请求路由
 sidebar_label: Bosses
 slug: /bosses
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of all the bosses that can be encountered in Elden Ring, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output. 
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the boss |
 | name         | `string` | Name of the boss |
@@ -21,7 +21,7 @@ This route fetches a list of all the bosses that can be encountered in Elden Rin
 | drops         | `string[]` | List of items and spoils this boss drops |
 | healthPoints         | `string` | How much HP this boss has |
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -30,7 +30,7 @@ This route fetches a list of all the bosses that can be encountered in Elden Rin
   data: [{
       id: "17f69590896l0i1ul0hnmor8iyf9xd",
       name: "Ancestor Spirit",
-      image: "https://eldenring.fanapis.com/images/bosses/17f69590896l0i1ul0hnmor8iyf9xd.png",
+      image: "https://eldenring-api.vercel.app/images/bosses/17f69590896l0i1ul0hnmor8iyf9xd.png",
       description: "A glowing spirit that takes the form of a large deer, making it a menacing threat when charging at targets.",
       location: "Siofra River",
       drops: [
@@ -42,7 +42,7 @@ This route fetches a list of all the bosses that can be encountered in Elden Rin
     {
       id: "17f69878c4al0i1ul0i7dsfou8igrk",
       name: "Ancient Hero Of Zamor",
-      image: "https://eldenring.fanapis.com/images/bosses/17f69878c4al0i1ul0i7dsfou8igrk.png",
+      image: "https://eldenring-api.vercel.app/images/bosses/17f69878c4al0i1ul0i7dsfou8igrk.png",
       description: "Noticeably agile, frost-made creature suceptible to magic attacks.",
       location: "Weeping Evergaol, Giant-Conquering Hero's Grave",
       drops: [
@@ -62,19 +62,19 @@ This route fetches a list of all the bosses that can be encountered in Elden Rin
 ```
 
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | https://eldenring.fanapis.com/api/bosses | This route retrieves a list of all the bosses of **Elden Ring**. |
-| `GET`         | https://eldenring.fanapis.com/api/bosses/:boss_id | This route retrieves one **Elden Ring** boss using its ID. |
+| `GET`         | https://eldenring-api.vercel.app/api/bosses | This route retrieves a list of all the bosses of **Elden Ring**. |
+| `GET`         | https://eldenring-api.vercel.app/api/bosses/:boss_id | This route retrieves one **Elden Ring** boss using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | https://eldenring.fanapis.com/api/bosses?limit=100 | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | https://eldenring.fanapis.com/api/bosses?limit=20&page=3 | This parameter is used no navigate between pages of results |
-| `name`         | none | https://eldenring.fanapis.com/api/bosses?name=Ancestor%20Spirit  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | https://eldenring-api.vercel.app/api/bosses?limit=100 | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | https://eldenring-api.vercel.app/api/bosses?limit=20&page=3 | This parameter is used no navigate between pages of results |
+| `name`         | none | https://eldenring-api.vercel.app/api/bosses?name=Ancestor%20Spirit  | This parameter is used to search for fields by their names |

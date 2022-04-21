@@ -2,16 +2,16 @@
   "unversionedId": "start",
   "id": "start",
   "isDocsHomePage": false,
-  "title": "Elden Ring API",
+  "title": "艾尔登法环 API",
   "description": "Elden Ring Hero",
   "source": "@site/docs/start.md",
   "slug": "/",
   "permalink": "/docs/",
   "version": "current",
-  "sidebar_label": "Getting Started",
+  "sidebar_label": "开始",
   "sidebar": "someSidebar",
   "next": {
-    "title": "Ammos Route",
+    "title": "箭类",
     "permalink": "/docs/ammos"
   }
 }

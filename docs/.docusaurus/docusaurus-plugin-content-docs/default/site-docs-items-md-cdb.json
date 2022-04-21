@@ -2,8 +2,8 @@
   "unversionedId": "items",
   "id": "items",
   "isDocsHomePage": false,
-  "title": "Items Route",
-  "description": "Introduction",
+  "title": "Items 请求路由",
+  "description": "简介",
   "source": "@site/docs/items.md",
   "slug": "/items",
   "permalink": "/docs/items",
@@ -11,11 +11,11 @@
   "sidebar_label": "Items",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Incantations Route",
+    "title": "Incantations 请求路由",
     "permalink": "/docs/incantations"
   },
   "next": {
-    "title": "Locations Route",
+    "title": "Locations 请求路由",
     "permalink": "/docs/locations"
   }
 }

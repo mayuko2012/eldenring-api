@@ -2,20 +2,20 @@
   "unversionedId": "ashes",
   "id": "ashes",
   "isDocsHomePage": false,
-  "title": "Ashes of War Route",
-  "description": "Introduction",
-  "source": "@site/docs/ashes.md",
+  "title": "Ashes of War 请求路由",
+  "description": "简介",
+  "source": "@site/docs/ashesOfWar.md",
   "slug": "/ashes",
   "permalink": "/docs/ashes",
   "version": "current",
   "sidebar_label": "Ashes of War",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Armors Route",
+    "title": "Armors 请求路由",
     "permalink": "/docs/armors"
   },
   "next": {
-    "title": "Bosses Route",
+    "title": "Bosses 请求路由",
     "permalink": "/docs/bosses"
   }
 }

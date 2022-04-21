@@ -1,22 +1,28 @@
 ---
 id: start
-title: Elden Ring API
-sidebar_label: Getting Started
+title: 艾尔登法环 API
+sidebar_label: 开始
 slug: /
 ---
 
 ![Elden Ring Hero](../static/img/eldenring-hero.jpg)
 
-The Elden Ring is a cool open source API that provides information about this amazing game released by FromSoftware in 2022. In this section you will be guided with basics steps on how to properly use this API. This API is open, so it doesn't require an API key to use it. Also, please give us a star on our [official github repository](http://www.github.com/deliton/eldenring-api) and feel free to post issues there.
+艾尔登法环 API 提供了 FromSoftware 在 2022 年发行的迄今为止最伟大游戏**艾尔登法环**的一些内容说明，通过此文档您可以快速了解如何使用此 API。
 
-## Example REQUEST (REST)
+## THANKS TO
 
-Since this API doesn't require you to provide an API key, it's extremely easy to use. Feel free to explore our documentation and test routes! Let's retrieve a list of all released games with the following route:
+This repositorie is forked [eldenring-api](https://github.com/deliton/eldenring-api).  I can't thank [Deliton](https://github.com/deliton) enough who did all the hard work and motivated me to make it chinese possible.
 
-- METHOD: **GET**
-- URL: https://eldenring.fanapis.com/api/items?limit=2
+## 中文支持
 
-- RESULT
+艾尔登法环 API 的数据是基于 [Deliton](https://github.com/deliton) 整理的数据所作出的中文版本。中文翻译均使用  v1.3.2 版本 **Elden Ring **中所定义的中文名称，因个人能力有限，目前仍有一些英文字段未能准确翻译。如果您有更好的意见，欢迎在我们的[仓库](https://github.com/mayuko2012/eldenring-api)中留下您的意见，更期待您的 Pr。:)
+
+## 示例请求 (REST)
+
+- 请求方法: **GET**
+- 请求 URL: https://eldenring-api.vercel.app/api/items?limit=2
+
+- 请求结果：
 
 ```javascript
 {
@@ -25,7 +31,7 @@ Since this API doesn't require you to provide an API key, it's extremely easy to
   data: [{
       id: "17f69e47912l0i1z0lip3kamll88h",
       name: "Blue Cipher Ring",
-      image: "https://eldenring.fanapis.com/images/items/17f69e47912l0i1z0lip3kamll88h.png",
+      image: "https://eldenring-api.vercel.app/images/items/17f69e47912l0i1z0lip3kamll88h.png",
       description: "Item for online play. Puts the wearer in ready state to answer should someone in another world call for rescue. You will be summoned to their world as a hunter. When summoned to rescue another player, your objective will be to defeat the invader.",
       scaling: "Reusable",
       effect: "Enables the wearer to answer calls for rescue"
@@ -33,7 +39,7 @@ Since this API doesn't require you to provide an API key, it's extremely easy to
     {
       id: "17f69cb5ad0l0i1z0lpxlgghg1a5nd",
       name: "White Cipher Ring",
-      image: "https://eldenring.fanapis.com/images/items/17f69cb5ad0l0i1z0lpxlgghg1a5nd.png",
+      image: "https://eldenring-api.vercel.app/images/items/17f69cb5ad0l0i1z0lpxlgghg1a5nd.png",
       description: "Item for online play. Allows you to automatically request for a hunter from another world to come to your rescue when your world is invaded. (You may be unable to summon rescuers under certain circumstances). A lost mystic code, enchanted to take the form of a ring. One of the fetishes said to have been bestowed by the Two Fingers.",
       scaling: "Reusable",
       effect: "When invaded, request the aid of a hunter."
@@ -42,15 +48,15 @@ Since this API doesn't require you to provide an API key, it's extremely easy to
 }
 ```
 
-## GraphQL Support
+## GraphQL 支持
 
-GraphQL is an open-source data query and manipulation language created by Facebook in 2015. It provides a more efficient and scalable way to access and update data compared to traditional REST API endpoints.
+GraphQL 是 Facebook 在 2015 年创建的一种开源数据查询和操作语言。与传统的 REST API 相比，它提供了一种更高效和可扩展的方式来访问和更新数据。
 
-GraphQL allows clients to specify the exact data they need from servers, reducing the number of requests and bandwidth needed. Servers can also batch multiple queries into a single request, improving performance. You can get started by visiting https://eldenring.fanapis.com/api/graphql and play around with the data.
+GraphQL 允许客户端从服务器获取他们指定需要的数据，从而减少所需的请求数量和带宽。 服务器还可以将多个查询批处理到一个请求中，从而提高性能。 您可以通过访问 https://eldenring-api.vercel.app/api/graphql 开始使用数据。
 
-## Example REQUEST (GRAPHQL)
+## 示例请求 (GRAPHQL)
 
-Let's retrieve a monster called "Giant Lobster", I want this API to return its `name`, `location` and an `image`. So let's make a POST request with the following GraphQL body:
+让我们检索一个名为「Giant Lobster」的怪物，希望这个 API 返回 `name`、`location` 和 `image`字段。 因此，您只需要发出一个POST请求并带上如下的GraphQL ：
 
 ```json
 query {
@@ -62,7 +68,7 @@ query {
 }
 ```
 
-Then the GraphQL API will return:
+GraphQL API 将会返回以下数据：
 
 - RESULT
 
@@ -73,22 +79,9 @@ Then the GraphQL API will return:
       {
         "name": "Giant Lobster",
         "location": "Liurnia of the Lakes",
-        "image": "https://eldenring.fanapis.com/images/creatures/17f69d7f00al0i6ytxittgv1hoa7vg.png"
+        "image": "https://eldenring-api.vercel.app/images/creatures/17f69d7f00al0i6ytxittgv1hoa7vg.png"
       }
     ]
   }
 }
 ```
-
-Pretty easy, huh? Go to https://eldenring.fanapis.com/api/graphql and use the data for your project as you like
-
-## Fair Use Policy
-
-Elden Ring API is free and open to use. Because of this, we humbly ask developers to use it fairly and not spam it. This is an educational service so please do not harm others.
-
-## Issues
-
-The data available on this API was scraped from other Elden Ring fansites and wikis. If you find some issue or incorrect data, feel free to open an issue [on this link](https://github.com/deliton/eldenring-api/issues/new)
-
-
----

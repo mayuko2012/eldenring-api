@@ -2,8 +2,8 @@
   "unversionedId": "locations",
   "id": "locations",
   "isDocsHomePage": false,
-  "title": "Locations Route",
-  "description": "Introduction",
+  "title": "Locations 请求路由",
+  "description": "简介",
   "source": "@site/docs/locations.md",
   "slug": "/locations",
   "permalink": "/docs/locations",
@@ -11,11 +11,11 @@
   "sidebar_label": "Locations",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Items Route",
+    "title": "Items 请求路由",
     "permalink": "/docs/items"
   },
   "next": {
-    "title": "Npcs Route",
+    "title": "Npcs 请求路由",
     "permalink": "/docs/npcs"
   }
 }

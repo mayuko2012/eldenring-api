@@ -2,8 +2,8 @@
   "unversionedId": "ammos",
   "id": "ammos",
   "isDocsHomePage": false,
-  "title": "Ammos Route",
-  "description": "Introduction",
+  "title": "箭类",
+  "description": "简介",
   "source": "@site/docs/ammos.md",
   "slug": "/ammos",
   "permalink": "/docs/ammos",
@@ -11,11 +11,11 @@
   "sidebar_label": "Ammos",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Elden Ring API",
+    "title": "艾尔登法环 API",
     "permalink": "/docs/"
   },
   "next": {
-    "title": "Armors Route",
+    "title": "Armors 请求路由",
     "permalink": "/docs/armors"
   }
 }

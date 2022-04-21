@@ -2,8 +2,8 @@
   "unversionedId": "spirits",
   "id": "spirits",
   "isDocsHomePage": false,
-  "title": "Spirits Route",
-  "description": "Introduction",
+  "title": "Spirits 请求路由",
+  "description": "简介",
   "source": "@site/docs/spirits.md",
   "slug": "/spirits",
   "permalink": "/docs/spirits",
@@ -11,11 +11,11 @@
   "sidebar_label": "Spirits",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Sorceries Route",
+    "title": "Sorceries 请求路由",
     "permalink": "/docs/sorceries"
   },
   "next": {
-    "title": "Talismans Route",
+    "title": "Talismans 请求路由",
     "permalink": "/docs/talismans"
   }
 }

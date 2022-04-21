@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/images/:path*',
-        destination: 'https://raw.githubusercontent.com/deliton/eldenring-api/main/resources/images/:path*'
+        destination: 'https://raw.githubusercontent.com/mayuko2012/eldenring-api/main/resources/images/:path*'
       }
     ]
   },

@@ -22,12 +22,7 @@ export default {
           "position": "left"
         },
         {
-          "to": "blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/deliton/eldenring-api",
+          "href": "https://github.com/mayuko2012/eldenring-api",
           "label": "GitHub",
           "position": "right"
         }
@@ -56,13 +51,13 @@ export default {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/mnt/c/Users/delit/Documents/codes/deliton/eldenring-api/docs/sidebars.js"
+          "sidebarPath": "/Users/hades/Developer/eldenring-api/docs/sidebars.js"
         },
         "blog": {
           "showReadingTime": true
         },
         "theme": {
-          "customCss": "/mnt/c/Users/delit/Documents/codes/deliton/eldenring-api/docs/src/css/custom.css"
+          "customCss": "/Users/hades/Developer/eldenring-api/docs/src/css/custom.css"
         }
       }
     ]

@@ -1,17 +1,17 @@
 ---
 id: incantations
-title: Incantations Route
+title: Incantations 请求路由
 sidebar_label: Incantations
 slug: /incantations
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of all incantations that can be obtained in Elden Ring, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output.
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the incantation |
 | name         | `string` | Name of the incantation |
@@ -23,7 +23,7 @@ This route fetches a list of all incantations that can be obtained in Elden Ring
 | effects         | `string` | What this incantation does |
 | requires         | `{ name: string, amount: number }` | What attributes and what amount is required to cast this incantation |
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -32,7 +32,7 @@ This route fetches a list of all incantations that can be obtained in Elden Ring
   data: [{
       id: "17f696c7ce7l0hynrwmh6d0r0rwk2",
       name: "Ancient Dragons' Lightning Strike",
-      image: "https://eldenring.fanapis.com/images/incantations/17f696c7ce7l0hynrwmh6d0r0rwk2.png",
+      image: "https://eldenring-api.vercel.app/images/incantations/17f696c7ce7l0hynrwmh6d0r0rwk2.png",
       description: "A secret incantation of the capital's ancient dragon cult.",
       type: "Incantations",
       cost: 27,
@@ -55,7 +55,7 @@ This route fetches a list of all incantations that can be obtained in Elden Ring
     {
       id: "17f695ad891l0hynrxcposdnx7gy9h",
       name: "Aspects Of The Crucible: Horns",
-      image: "https://eldenring.fanapis.com/images/incantations/17f695ad891l0hynrxcposdnx7gy9h.png",
+      image: "https://eldenring-api.vercel.app/images/incantations/17f695ad891l0hynrxcposdnx7gy9h.png",
       description: "One of the ancient Erdtree incantations.",
       type: "Incantations",
       cost: 30,
@@ -80,19 +80,19 @@ This route fetches a list of all incantations that can be obtained in Elden Ring
 ```
 
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | https://eldenring.fanapis.com/api/incantations | This route retrieves a list of all the incantations of **Elden Ring**. |
-| `GET`         | https://eldenring.fanapis.com/api/incantations/:incantation_id | This route retrieves one **Elden Ring** incantation using its ID. |
+| `GET`         | https://eldenring-api.vercel.app/api/incantations | This route retrieves a list of all the incantations of **Elden Ring**. |
+| `GET`         | https://eldenring-api.vercel.app/api/incantations/:incantation_id | This route retrieves one **Elden Ring** incantation using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | https://eldenring.fanapis.com/api/incantations?limit=100 | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | https://eldenring.fanapis.com/api/incantations?limit=20&page=3 | This parameter is used no navigate between pages of results |
-| `name`         | none | https://eldenring.fanapis.com/api/incantations?name=Ancient%20Dragons'%20Lightning%20Strike  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | https://eldenring-api.vercel.app/api/incantations?limit=100 | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | https://eldenring-api.vercel.app/api/incantations?limit=20&page=3 | This parameter is used no navigate between pages of results |
+| `name`         | none | https://eldenring-api.vercel.app/api/incantations?name=Ancient%20Dragons'%20Lightning%20Strike  | This parameter is used to search for fields by their names |

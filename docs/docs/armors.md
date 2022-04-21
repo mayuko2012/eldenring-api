@@ -1,17 +1,17 @@
 ---
 id: armors
-title: Armors Route
+title: Armors 请求路由
 sidebar_label: Armors
 slug: /armors
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of all armor pieces that can be encountered in Elden Ring, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output. 
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the armor piece |
 | name         | `string` | Name of the armor piece |
@@ -22,7 +22,7 @@ This route fetches a list of all armor pieces that can be encountered in Elden R
 | dmgNegation         | `{name: string, amount: number}` | How much damage this armor piece negates. Example: `{ "name": "Strike", amount: 6 }`|
 | resistance         | `{name: string, amount: number}` | How much resistance wearing this armor piece provides. Example: `{ "name": "Poise", amount: 10 }`|
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -31,7 +31,7 @@ This route fetches a list of all armor pieces that can be encountered in Elden R
   data: [{
       id: "17f696e0685l0i0nblzy58h0qvewk",
       name: "All-knowing Greaves",
-      image: "https://eldenring.fanapis.com/images/armors/17f696e0685l0i0nblzy58h0qvewk.png",
+      image: "https://eldenring-api.vercel.app/images/armors/17f696e0685l0i0nblzy58h0qvewk.png",
       description: "Greaves set with countless eyes and ears. Worn by Gideon Ofnir, the All-Knowing. Knowledge begins with the recognition of one's ignorance. The realization that the search for knowledge is unending. But when Gideon glimpsed into the will of Queen Marika, he shuddered in fear. At the end that should not be.",
       category: "Leg Armor",
       dmgNegation: [{
@@ -93,7 +93,7 @@ This route fetches a list of all armor pieces that can be encountered in Elden R
     {
       id: "17f69515b49l0i0nbno079cqzlskebf",
       name: "All-knowing Armor",
-      image: "https://eldenring.fanapis.com/images/armors/17f69515b49l0i0nbno079cqzlskebf.png",
+      image: "https://eldenring-api.vercel.app/images/armors/17f69515b49l0i0nbno079cqzlskebf.png",
       description: "Armor set with countless eyes and ears. Worn by Gideon Ofnir, the All-Knowing. Knowledge begins with the recognition of one's ignorance. The realization that the search for knowledge is unending. But when Gideon glimpsed into the will of Queen Marika, he shuddered in fear. At the end that should not be.",
       category: "Chest Armor",
       dmgNegation: [{
@@ -157,19 +157,19 @@ This route fetches a list of all armor pieces that can be encountered in Elden R
 ```
 
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | https://eldenring.fanapis.com/api/armors | This route retrieves a list of all the armor pieces of **Elden Ring**. |
-| `GET`         | https://eldenring.fanapis.com/api/armors/:ammo_id | This route retrieves one **Elden Ring** armor piece using its ID. |
+| `GET`         | https://eldenring-api.vercel.app/api/armors | This route retrieves a list of all the armor pieces of **Elden Ring**. |
+| `GET`         | https://eldenring-api.vercel.app/api/armors/:ammo_id | This route retrieves one **Elden Ring** armor piece using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | https://eldenring.fanapis.com/api/armors?limit=100 | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | https://eldenring.fanapis.com/api/armors?limit=20&page=3 | This parameter is used no navigate between pages of results |
-| `name`         | none | https://eldenring.fanapis.com/api/armors?name=All-knowing%20Armor  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | https://eldenring-api.vercel.app/api/armors?limit=100 | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | https://eldenring-api.vercel.app/api/armors?limit=20&page=3 | This parameter is used no navigate between pages of results |
+| `name`         | none | https://eldenring-api.vercel.app/api/armors?name=All-knowing%20Armor  | This parameter is used to search for fields by their names |

@@ -1,17 +1,17 @@
 ---
 id: weapons
-title: Weapons Route
+title: Weapons 请求路由
 sidebar_label: Weapons
 slug: /weapons
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of all Weapons that can be obtained in Elden Ring, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output.
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the Weapon |
 | name         | `string` | Name of the Weapon |
@@ -24,7 +24,7 @@ This route fetches a list of all Weapons that can be obtained in Elden Ring, and
 | requiredAttributes         | `{ name: string, amount: number }` | What are the required attribute amount in order to properly use this Weapon. Example: `{ name: "Str", amount: 20 }`  |
 | scalesWith         | `{ name: string, scaling: string }` | How much the Weapon scales and with what attributes. Example: `{ name: "Str", scaling: "B" }`  |
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -33,7 +33,7 @@ This route fetches a list of all Weapons that can be obtained in Elden Ring, and
   data: [{
     id: "17f695c42f0l0i1ohb4cao0qxackpu",
     name: "Forked Hatchet",
-    image: "https://eldenring.fanapis.com/images/weapons/17f695c42f0l0i1ohb4cao0qxackpu.png",
+    image: "https://eldenring-api.vercel.app/images/weapons/17f695c42f0l0i1ohb4cao0qxackpu.png",
     description: "Peculiar hatchet wielded by imps. The gently undulating forked blade is known as an imps tongue and causes blood loss",
     attack: [{
         name: "Phy",
@@ -109,19 +109,19 @@ This route fetches a list of all Weapons that can be obtained in Elden Ring, and
 }
 ```
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | <https://eldenring.fanapis.com/api/weapons> | This route retrieves a list of all the weapons of **Elden Ring**. |
-| `GET`         | <https://eldenring.fanapis.com/api/weapons/:weapon_id> | This route retrieves one **Elden Ring** weapon using its ID. |
+| `GET`         | <https://eldenring-api.vercel.app/api/weapons> | This route retrieves a list of all the weapons of **Elden Ring**. |
+| `GET`         | <https://eldenring-api.vercel.app/api/weapons/:weapon_id> | This route retrieves one **Elden Ring** weapon using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | <https://eldenring.fanapis.com/api/weapons?limit=100> | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | <https://eldenring.fanapis.com/api/weapons?limit=20&page=3> | This parameter is used no navigate between pages of results |
-| `name`         | none | <https://eldenring.fanapis.com/api/weapons?name=Forked%20Hatchet>  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | <https://eldenring-api.vercel.app/api/weapons?limit=100> | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | <https://eldenring-api.vercel.app/api/weapons?limit=20&page=3> | This parameter is used no navigate between pages of results |
+| `name`         | none | <https://eldenring-api.vercel.app/api/weapons?name=Forked%20Hatchet>  | This parameter is used to search for fields by their names |

@@ -2,8 +2,8 @@
   "unversionedId": "talismans",
   "id": "talismans",
   "isDocsHomePage": false,
-  "title": "Talismans Route",
-  "description": "Introduction",
+  "title": "Talismans 请求路由",
+  "description": "简介",
   "source": "@site/docs/talismans.md",
   "slug": "/talismans",
   "permalink": "/docs/talismans",
@@ -11,11 +11,11 @@
   "sidebar_label": "Talismans",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Spirits Route",
+    "title": "Spirits 请求路由",
     "permalink": "/docs/spirits"
   },
   "next": {
-    "title": "Weapons Route",
+    "title": "Weapons 请求路由",
     "permalink": "/docs/weapons"
   }
 }

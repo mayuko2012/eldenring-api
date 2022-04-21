@@ -11,7 +11,7 @@
         "items": [
           {
             "type": "link",
-            "label": "Getting Started",
+            "label": "开始",
             "href": "/docs/"
           }
         ]

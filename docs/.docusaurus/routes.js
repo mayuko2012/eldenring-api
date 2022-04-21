@@ -43,38 +43,8 @@ export default [
   exact: true,
 },
 {
-  path: '/blog',
-  component: ComponentCreator('/blog','d90'),
-  exact: true,
-},
-{
-  path: '/blog/tags',
-  component: ComponentCreator('/blog/tags','a25'),
-  exact: true,
-},
-{
-  path: '/blog/tags/api',
-  component: ComponentCreator('/blog/tags/api','6a1'),
-  exact: true,
-},
-{
-  path: '/blog/tags/documentation',
-  component: ComponentCreator('/blog/tags/documentation','ba8'),
-  exact: true,
-},
-{
-  path: '/blog/tags/release',
-  component: ComponentCreator('/blog/tags/release','fbc'),
-  exact: true,
-},
-{
-  path: '/blog/v1-release',
-  component: ComponentCreator('/blog/v1-release','581'),
-  exact: true,
-},
-{
   path: '/docs',
-  component: ComponentCreator('/docs','7be'),
+  component: ComponentCreator('/docs','5ce'),
   
   routes: [
 {
@@ -94,7 +64,7 @@ export default [
 },
 {
   path: '/docs/ashes',
-  component: ComponentCreator('/docs/ashes','310'),
+  component: ComponentCreator('/docs/ashes','6d7'),
   exact: true,
 },
 {

@@ -2,8 +2,8 @@
   "unversionedId": "sorceries",
   "id": "sorceries",
   "isDocsHomePage": false,
-  "title": "Sorceries Route",
-  "description": "Introduction",
+  "title": "Sorceries 请求路由",
+  "description": "简介",
   "source": "@site/docs/sorceries.md",
   "slug": "/sorceries",
   "permalink": "/docs/sorceries",
@@ -11,11 +11,11 @@
   "sidebar_label": "Sorceries",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Shields Route",
+    "title": "Shields 请求路由",
     "permalink": "/docs/shields"
   },
   "next": {
-    "title": "Spirits Route",
+    "title": "Spirits 请求路由",
     "permalink": "/docs/spirits"
   }
 }

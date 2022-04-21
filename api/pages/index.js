@@ -25,8 +25,8 @@ function Index() {
           <img className='apiLogo' src='/eldenring-opensource-logo.png'/>
           <div className='buttons'>
             <a className='myButton'
-              href='https://docs.eldenring.fanapis.com/docs'>
-              Go to Documentation
+              href='https://eldenring-doc.vercel.app/docs'>
+              查看文档
             </a>
           </div>
         </div>

@@ -1,17 +1,17 @@
 ---
 id: classes
-title: Classes Route
+title: Classes 请求路由
 sidebar_label: Classes
 slug: /classes
 ---
 
-## Introduction
+## 简介
 
 This route fetches a list of the initial classes that can be selected in Elden Ring's character creation, and outputs that in JSON format. The user can define his own pagination and also use search queries to find the desired output.
 
-## Schema
+## 响应
 
-| ATTRIBUTE        |      TYPE      |   DESCRIPTION |
+| 参数名称        |      类型      |   描述 |
 | ------------- | :-----------: | -----: |
 | id         | `string` | Id of the class |
 | name         | `string` | Name of the class |
@@ -19,7 +19,7 @@ This route fetches a list of the initial classes that can be selected in Elden R
 | description         | `string` | Short description of the class |
 | stats         | `{ level: string, vigor: string, mind: string, endurance: string, strength: string, dexterity: string, intelligence: string, faith: string, arcane: string}` | Initial stats of the class |
 
-## Sample Result
+## 响应示例
 
 ```javascript
 {
@@ -28,7 +28,7 @@ This route fetches a list of the initial classes that can be selected in Elden R
   data: [{
       id: "17f69d71826l0i32gkm3ndn3kywxqj",
       name: "Hero",
-      image: "https://eldenring.fanapis.com/images/classes/17f69d71826l0i32gkm3ndn3kywxqj.png",
+      image: "https://eldenring-api.vercel.app/images/classes/17f69d71826l0i32gkm3ndn3kywxqj.png",
       description: "A stalwart Hero, at home with a battleaxe, descended from a badlands chieftain",
       stats: {
         level: "7",
@@ -45,7 +45,7 @@ This route fetches a list of the initial classes that can be selected in Elden R
     {
       id: "17f69b2dd76l0i32gljr3f62pkzhjo",
       name: "Warrior",
-      image: "https://eldenring.fanapis.com/images/classes/17f69b2dd76l0i32gljr3f62pkzhjo.png",
+      image: "https://eldenring-api.vercel.app/images/classes/17f69b2dd76l0i32gljr3f62pkzhjo.png",
       description: "A twinblade wielding warrior from a nomadic tribe. An origin of exceptional technique",
       stats: {
         level: "8",
@@ -63,19 +63,19 @@ This route fetches a list of the initial classes that can be selected in Elden R
 }
 ```
 
-## Route
+## 请求路由
 
-| METHOD        |      URL      |   DESCRIPTION |
+| 请求方法        |      URL      |   描述 |
 | ------------- | :-----------: | -----: |
-| `GET`         | <https://eldenring.fanapis.com/api/classes> | This route retrieves a list of all the classes in **Elden Ring**. |
-| `GET`         | <https://eldenring.fanapis.com/api/classes/:class_id> | This route retrieves one **Elden Ring** class using its ID. |
+| `GET`         | <https://eldenring-api.vercel.app/api/classes> | This route retrieves a list of all the classes in **Elden Ring**. |
+| `GET`         | <https://eldenring-api.vercel.app/api/classes/:class_id> | This route retrieves one **Elden Ring** class using its ID. |
 
-## Parameters
+## 请求参数
 
-This route supports the following parameters:
+This route supports the following 请求参数:
 
-| Parameter        |      default value      | Example URL |  DESCRIPTION |
+| 参数名称        |      默认值      | 示例URL |  描述 |
 | ------------- | :-----------: | -----: |  -----: |
-| `limit`        | 20 | <https://eldenring.fanapis.com/api/classes?limit=100> | This parameter is used to set the maximum amount of items in the response |
-| `page`         | 0 | <https://eldenring.fanapis.com/api/classes?limit=20&page=3> | This parameter is used no navigate between pages of results |
-| `name`         | none | <https://eldenring.fanapis.com/api/classes?name=Hero>  | This parameter is used to search for fields by their names |
+| `limit`        | 20 | <https://eldenring-api.vercel.app/api/classes?limit=100> | This parameter is used to set the maximum amount of items in the response |
+| `page`         | 0 | <https://eldenring-api.vercel.app/api/classes?limit=20&page=3> | This parameter is used no navigate between pages of results |
+| `name`         | none | <https://eldenring-api.vercel.app/api/classes?name=Hero>  | This parameter is used to search for fields by their names |

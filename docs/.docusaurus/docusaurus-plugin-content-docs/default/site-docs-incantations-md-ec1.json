@@ -2,8 +2,8 @@
   "unversionedId": "incantations",
   "id": "incantations",
   "isDocsHomePage": false,
-  "title": "Incantations Route",
-  "description": "Introduction",
+  "title": "Incantations 请求路由",
+  "description": "简介",
   "source": "@site/docs/incantations.md",
   "slug": "/incantations",
   "permalink": "/docs/incantations",
@@ -11,11 +11,11 @@
   "sidebar_label": "Incantations",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Creatures Route",
+    "title": "Creatures 请求路由",
     "permalink": "/docs/creatures"
   },
   "next": {
-    "title": "Items Route",
+    "title": "Items 请求路由",
     "permalink": "/docs/items"
   }
 }

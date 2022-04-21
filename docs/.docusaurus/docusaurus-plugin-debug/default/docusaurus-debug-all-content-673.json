@@ -8,8 +8,8 @@
           "versionPath": "/docs",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/mnt/c/Users/delit/Documents/codes/deliton/eldenring-api/docs/sidebars.js",
-          "docsDirPath": "/mnt/c/Users/delit/Documents/codes/deliton/eldenring-api/docs/docs",
+          "sidebarFilePath": "/Users/hades/Developer/eldenring-api/docs/sidebars.js",
+          "docsDirPath": "/Users/hades/Developer/eldenring-api/docs/docs",
           "mainDocId": "start",
           "sidebars": {
             "someSidebar": [
@@ -128,8 +128,8 @@
               "unversionedId": "ammos",
               "id": "ammos",
               "isDocsHomePage": false,
-              "title": "Ammos Route",
-              "description": "Introduction",
+              "title": "箭类",
+              "description": "简介",
               "source": "@site/docs/ammos.md",
               "slug": "/ammos",
               "permalink": "/docs/ammos",
@@ -137,11 +137,11 @@
               "sidebar_label": "Ammos",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Elden Ring API",
+                "title": "艾尔登法环 API",
                 "permalink": "/docs/"
               },
               "next": {
-                "title": "Armors Route",
+                "title": "Armors 请求路由",
                 "permalink": "/docs/armors"
               }
             },
@@ -149,8 +149,8 @@
               "unversionedId": "armors",
               "id": "armors",
               "isDocsHomePage": false,
-              "title": "Armors Route",
-              "description": "Introduction",
+              "title": "Armors 请求路由",
+              "description": "简介",
               "source": "@site/docs/armors.md",
               "slug": "/armors",
               "permalink": "/docs/armors",
@@ -158,11 +158,11 @@
               "sidebar_label": "Armors",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Ammos Route",
+                "title": "箭类",
                 "permalink": "/docs/ammos"
               },
               "next": {
-                "title": "Ashes of War Route",
+                "title": "Ashes of War 请求路由",
                 "permalink": "/docs/ashes"
               }
             },
@@ -170,20 +170,20 @@
               "unversionedId": "ashes",
               "id": "ashes",
               "isDocsHomePage": false,
-              "title": "Ashes of War Route",
-              "description": "Introduction",
-              "source": "@site/docs/ashesofwar.md",
+              "title": "Ashes of War 请求路由",
+              "description": "简介",
+              "source": "@site/docs/ashesOfWar.md",
               "slug": "/ashes",
               "permalink": "/docs/ashes",
               "version": "current",
               "sidebar_label": "Ashes of War",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Armors Route",
+                "title": "Armors 请求路由",
                 "permalink": "/docs/armors"
               },
               "next": {
-                "title": "Bosses Route",
+                "title": "Bosses 请求路由",
                 "permalink": "/docs/bosses"
               }
             },
@@ -191,8 +191,8 @@
               "unversionedId": "bosses",
               "id": "bosses",
               "isDocsHomePage": false,
-              "title": "Bosses Route",
-              "description": "Introduction",
+              "title": "Bosses 请求路由",
+              "description": "简介",
               "source": "@site/docs/bosses.md",
               "slug": "/bosses",
               "permalink": "/docs/bosses",
@@ -200,11 +200,11 @@
               "sidebar_label": "Bosses",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Ashes of War Route",
+                "title": "Ashes of War 请求路由",
                 "permalink": "/docs/ashes"
               },
               "next": {
-                "title": "Classes Route",
+                "title": "Classes 请求路由",
                 "permalink": "/docs/classes"
               }
             },
@@ -212,8 +212,8 @@
               "unversionedId": "classes",
               "id": "classes",
               "isDocsHomePage": false,
-              "title": "Classes Route",
-              "description": "Introduction",
+              "title": "Classes 请求路由",
+              "description": "简介",
               "source": "@site/docs/classes.md",
               "slug": "/classes",
               "permalink": "/docs/classes",
@@ -221,11 +221,11 @@
               "sidebar_label": "Classes",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Bosses Route",
+                "title": "Bosses 请求路由",
                 "permalink": "/docs/bosses"
               },
               "next": {
-                "title": "Creatures Route",
+                "title": "Creatures 请求路由",
                 "permalink": "/docs/creatures"
               }
             },
@@ -233,8 +233,8 @@
               "unversionedId": "creatures",
               "id": "creatures",
               "isDocsHomePage": false,
-              "title": "Creatures Route",
-              "description": "Introduction",
+              "title": "Creatures 请求路由",
+              "description": "简介",
               "source": "@site/docs/creatures.md",
               "slug": "/creatures",
               "permalink": "/docs/creatures",
@@ -242,11 +242,11 @@
               "sidebar_label": "Creatures",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Classes Route",
+                "title": "Classes 请求路由",
                 "permalink": "/docs/classes"
               },
               "next": {
-                "title": "Incantations Route",
+                "title": "Incantations 请求路由",
                 "permalink": "/docs/incantations"
               }
             },
@@ -255,7 +255,7 @@
               "id": "graphql",
               "isDocsHomePage": false,
               "title": "GraphQL Endpoint",
-              "description": "That's it, we support GraphQL out of the box. Just go to https://eldenring.fanapis.com/api/graphql and use the Apollo GraphQL sandbox. By using GraphQL you have access to all of its schema and resolvers, so it should be easy to explore on your own. Below, we'll see a few examples using the new GraphQL endpoint.",
+              "description": "That's it, we support GraphQL out of the box. Just go to https://eldenring-api.vercel.app/api/graphql and use the Apollo GraphQL sandbox. By using GraphQL you have access to all of its 响应 and resolvers, so it should be easy to explore on your own. Below, we'll see a few examples using the new GraphQL endpoint.",
               "source": "@site/docs/graphql.md",
               "slug": "/graphql",
               "permalink": "/docs/graphql",
@@ -263,7 +263,7 @@
               "sidebar_label": "Usage",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Weapons Route",
+                "title": "Weapons 请求路由",
                 "permalink": "/docs/weapons"
               }
             },
@@ -271,8 +271,8 @@
               "unversionedId": "incantations",
               "id": "incantations",
               "isDocsHomePage": false,
-              "title": "Incantations Route",
-              "description": "Introduction",
+              "title": "Incantations 请求路由",
+              "description": "简介",
               "source": "@site/docs/incantations.md",
               "slug": "/incantations",
               "permalink": "/docs/incantations",
@@ -280,11 +280,11 @@
               "sidebar_label": "Incantations",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Creatures Route",
+                "title": "Creatures 请求路由",
                 "permalink": "/docs/creatures"
               },
               "next": {
-                "title": "Items Route",
+                "title": "Items 请求路由",
                 "permalink": "/docs/items"
               }
             },
@@ -292,8 +292,8 @@
               "unversionedId": "items",
               "id": "items",
               "isDocsHomePage": false,
-              "title": "Items Route",
-              "description": "Introduction",
+              "title": "Items 请求路由",
+              "description": "简介",
               "source": "@site/docs/items.md",
               "slug": "/items",
               "permalink": "/docs/items",
@@ -301,11 +301,11 @@
               "sidebar_label": "Items",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Incantations Route",
+                "title": "Incantations 请求路由",
                 "permalink": "/docs/incantations"
               },
               "next": {
-                "title": "Locations Route",
+                "title": "Locations 请求路由",
                 "permalink": "/docs/locations"
               }
             },
@@ -313,8 +313,8 @@
               "unversionedId": "locations",
               "id": "locations",
               "isDocsHomePage": false,
-              "title": "Locations Route",
-              "description": "Introduction",
+              "title": "Locations 请求路由",
+              "description": "简介",
               "source": "@site/docs/locations.md",
               "slug": "/locations",
               "permalink": "/docs/locations",
@@ -322,11 +322,11 @@
               "sidebar_label": "Locations",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Items Route",
+                "title": "Items 请求路由",
                 "permalink": "/docs/items"
               },
               "next": {
-                "title": "Npcs Route",
+                "title": "Npcs 请求路由",
                 "permalink": "/docs/npcs"
               }
             },
@@ -334,8 +334,8 @@
               "unversionedId": "npcs",
               "id": "npcs",
               "isDocsHomePage": false,
-              "title": "Npcs Route",
-              "description": "Introduction",
+              "title": "Npcs 请求路由",
+              "description": "简介",
               "source": "@site/docs/npcs.md",
               "slug": "/npcs",
               "permalink": "/docs/npcs",
@@ -343,11 +343,11 @@
               "sidebar_label": "NPCs",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Locations Route",
+                "title": "Locations 请求路由",
                 "permalink": "/docs/locations"
               },
               "next": {
-                "title": "Shields Route",
+                "title": "Shields 请求路由",
                 "permalink": "/docs/shields"
               }
             },
@@ -355,8 +355,8 @@
               "unversionedId": "shields",
               "id": "shields",
               "isDocsHomePage": false,
-              "title": "Shields Route",
-              "description": "Introduction",
+              "title": "Shields 请求路由",
+              "description": "简介",
               "source": "@site/docs/shields.md",
               "slug": "/shields",
               "permalink": "/docs/shields",
@@ -364,11 +364,11 @@
               "sidebar_label": "Shields",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Npcs Route",
+                "title": "Npcs 请求路由",
                 "permalink": "/docs/npcs"
               },
               "next": {
-                "title": "Sorceries Route",
+                "title": "Sorceries 请求路由",
                 "permalink": "/docs/sorceries"
               }
             },
@@ -376,8 +376,8 @@
               "unversionedId": "sorceries",
               "id": "sorceries",
               "isDocsHomePage": false,
-              "title": "Sorceries Route",
-              "description": "Introduction",
+              "title": "Sorceries 请求路由",
+              "description": "简介",
               "source": "@site/docs/sorceries.md",
               "slug": "/sorceries",
               "permalink": "/docs/sorceries",
@@ -385,11 +385,11 @@
               "sidebar_label": "Sorceries",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Shields Route",
+                "title": "Shields 请求路由",
                 "permalink": "/docs/shields"
               },
               "next": {
-                "title": "Spirits Route",
+                "title": "Spirits 请求路由",
                 "permalink": "/docs/spirits"
               }
             },
@@ -397,8 +397,8 @@
               "unversionedId": "spirits",
               "id": "spirits",
               "isDocsHomePage": false,
-              "title": "Spirits Route",
-              "description": "Introduction",
+              "title": "Spirits 请求路由",
+              "description": "简介",
               "source": "@site/docs/spirits.md",
               "slug": "/spirits",
               "permalink": "/docs/spirits",
@@ -406,11 +406,11 @@
               "sidebar_label": "Spirits",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Sorceries Route",
+                "title": "Sorceries 请求路由",
                 "permalink": "/docs/sorceries"
               },
               "next": {
-                "title": "Talismans Route",
+                "title": "Talismans 请求路由",
                 "permalink": "/docs/talismans"
               }
             },
@@ -418,16 +418,16 @@
               "unversionedId": "start",
               "id": "start",
               "isDocsHomePage": false,
-              "title": "Elden Ring API",
+              "title": "艾尔登法环 API",
               "description": "Elden Ring Hero",
               "source": "@site/docs/start.md",
               "slug": "/",
               "permalink": "/docs/",
               "version": "current",
-              "sidebar_label": "Getting Started",
+              "sidebar_label": "开始",
               "sidebar": "someSidebar",
               "next": {
-                "title": "Ammos Route",
+                "title": "箭类",
                 "permalink": "/docs/ammos"
               }
             },
@@ -435,8 +435,8 @@
               "unversionedId": "talismans",
               "id": "talismans",
               "isDocsHomePage": false,
-              "title": "Talismans Route",
-              "description": "Introduction",
+              "title": "Talismans 请求路由",
+              "description": "简介",
               "source": "@site/docs/talismans.md",
               "slug": "/talismans",
               "permalink": "/docs/talismans",
@@ -444,11 +444,11 @@
               "sidebar_label": "Talismans",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Spirits Route",
+                "title": "Spirits 请求路由",
                 "permalink": "/docs/spirits"
               },
               "next": {
-                "title": "Weapons Route",
+                "title": "Weapons 请求路由",
                 "permalink": "/docs/weapons"
               }
             },
@@ -456,8 +456,8 @@
               "unversionedId": "weapons",
               "id": "weapons",
               "isDocsHomePage": false,
-              "title": "Weapons Route",
-              "description": "Introduction",
+              "title": "Weapons 请求路由",
+              "description": "简介",
               "source": "@site/docs/weapons.md",
               "slug": "/weapons",
               "permalink": "/docs/weapons",
@@ -465,7 +465,7 @@
               "sidebar_label": "Weapons",
               "sidebar": "someSidebar",
               "previous": {
-                "title": "Talismans Route",
+                "title": "Talismans 请求路由",
                 "permalink": "/docs/talismans"
               },
               "next": {
@@ -479,77 +479,7 @@
     }
   },
   "docusaurus-plugin-content-blog": {
-    "default": {
-      "blogPosts": [
-        {
-          "id": "v1-release",
-          "metadata": {
-            "permalink": "/blog/v1-release",
-            "source": "@site/blog/2022-03-18-v1-is-here.md",
-            "description": "A new release!",
-            "date": "2022-03-18T00:00:00.000Z",
-            "tags": [
-              {
-                "label": "release",
-                "permalink": "/blog/tags/release"
-              },
-              {
-                "label": "documentation",
-                "permalink": "/blog/tags/documentation"
-              },
-              {
-                "label": "api",
-                "permalink": "/blog/tags/api"
-              }
-            ],
-            "title": "Elden Ring Open Source API is here!",
-            "readingTime": 0.93,
-            "truncated": false
-          }
-        }
-      ],
-      "blogListPaginated": [
-        {
-          "metadata": {
-            "permalink": "/blog",
-            "page": 1,
-            "postsPerPage": 10,
-            "totalPages": 1,
-            "totalCount": 1,
-            "previousPage": null,
-            "nextPage": null,
-            "blogDescription": "Blog"
-          },
-          "items": [
-            "v1-release"
-          ]
-        }
-      ],
-      "blogTags": {
-        "release": {
-          "name": "release",
-          "items": [
-            "v1-release"
-          ],
-          "permalink": "/blog/tags/release"
-        },
-        "documentation": {
-          "name": "documentation",
-          "items": [
-            "v1-release"
-          ],
-          "permalink": "/blog/tags/documentation"
-        },
-        "api": {
-          "name": "api",
-          "items": [
-            "v1-release"
-          ],
-          "permalink": "/blog/tags/api"
-        }
-      },
-      "blogTagsListPath": "/blog/tags"
-    }
+    "default": null
   },
   "docusaurus-plugin-content-pages": {
     "default": [

@@ -2,8 +2,8 @@
   "unversionedId": "classes",
   "id": "classes",
   "isDocsHomePage": false,
-  "title": "Classes Route",
-  "description": "Introduction",
+  "title": "Classes 请求路由",
+  "description": "简介",
   "source": "@site/docs/classes.md",
   "slug": "/classes",
   "permalink": "/docs/classes",
@@ -11,11 +11,11 @@
   "sidebar_label": "Classes",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Bosses Route",
+    "title": "Bosses 请求路由",
     "permalink": "/docs/bosses"
   },
   "next": {
-    "title": "Creatures Route",
+    "title": "Creatures 请求路由",
     "permalink": "/docs/creatures"
   }
 }
